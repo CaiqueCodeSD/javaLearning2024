@@ -5,7 +5,7 @@ The method should not return any value, and it needs to print out:
     - "negative" if the parameter number is < 0
     - "zero" if the parameter number is equal to 0*/
 
-public class PositiveNegativeZero {
+public class positiveNegativeZero {
 
 	public static void checkNumber(int number) {
         
