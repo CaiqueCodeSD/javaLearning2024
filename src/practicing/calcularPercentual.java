@@ -1,8 +1,8 @@
 package practicing;
 
 /*Desenvolver um programa que leia a idade de um conjunto de pessoas. Este programa
-deverá calcular e mostrar: o percentual de pessoas adultas (&gt;=18) e o percentual de pessoas
-idosas (&gt;=65). Finalize a leitura de dados com uma idade negativa.*/
+deverá calcular e mostrar: o percentual de pessoas adultas (>=18) e o percentual de pessoas
+idosas (>=65). Finalize a leitura de dados com uma idade negativa.*/
 
 import java.util.Scanner;
 
