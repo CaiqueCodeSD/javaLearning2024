@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class mediaAprovados {
   
-/*Ler um vetor M com as médias finais de uma turma de 8 alunos. A seguir, calcule a média
+/*Gerar um vetor M com as médias finais de uma turma de 8 alunos. A seguir, calcule a média
 aritmética dos alunos aprovados (média maior ou igual a 6). Armazene em um vetor A, os índices
 que cada aluno ocupa no vetor M dos alunos que obtiveram média maior ou igual que a média da
 turma.*/
@@ -30,20 +30,25 @@ turma.*/
           
         }
 
+        double mediaTurma = (double)mediasAprovados/contAprovados;
+        int cont = 0;
         
         for (int i = 0; i < M.length; i++) {
-            int cont = 0;
-            if (M[i] >= 6) {
-                A[cont++] = i;
-            }
-          
+        	
+        	if (M[i] >= mediaTurma) {
+        		A[cont++] = i;
+        	}
+        	
         }
+        
+        System.out.println();
+        System.out.println("Média dos alunos aprovados: " + mediaTurma);
 
-        System.out.println("Média dos alunos aprovados: " + (double)mediasAprovados/contAprovados);
+        System.out.print("Índices com notas >= Média da Turma: ");
+        
+        for (int i = 0; i < cont; i++) {
 
-        for (int i = 0; i < contAprovados; i++) {
-
-            System.out.println(A[i]);
+            System.out.print(A[i] + "\t");
           
         }
       
