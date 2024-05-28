@@ -12,10 +12,38 @@ turma.*/
         Random gerar = new Random();
       
         int[] M = new int[8];
+        int mediasAprovados = 0;
+        int contAprovados = 0;
 
+        int[] A = new int[8];
+
+      
         for (int i = 0; i < M.length; i++) {
 
             M[i] = gerar.nextInt(11);
+            System.out.print(M[i] + "\t");
+
+            if (M[i] >= 6) {
+                mediasAprovados += M[i];
+                contAprovados++;
+            }
+          
+        }
+
+        
+        for (int i = 0; i < M.length; i++) {
+            int cont = 0;
+            if (M[i] >= 6) {
+                A[cont++] = i;
+            }
+          
+        }
+
+        System.out.println("Média dos alunos aprovados: " + (double)mediasAprovados/contAprovados);
+
+        for (int i = 0; i < contAprovados; i++) {
+
+            System.out.println(A[i]);
           
         }
       
