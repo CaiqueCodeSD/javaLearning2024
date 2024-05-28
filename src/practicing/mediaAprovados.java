@@ -16,7 +16,6 @@ turma.*/
         int contAprovados = 0;
 
         int[] A = new int[8];
-
       
         for (int i = 0; i < M.length; i++) {
 
@@ -35,9 +34,9 @@ turma.*/
         
         for (int i = 0; i < M.length; i++) {
         	
-        	if (M[i] >= mediaTurma) {
-        		A[cont++] = i;
-        	}
+          	if (M[i] >= mediaTurma) {
+          		A[cont++] = i;
+          	}
         	
         }
         
