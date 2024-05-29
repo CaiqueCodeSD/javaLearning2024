@@ -23,7 +23,7 @@ public class cincoVetores {
         int contAP = 0;
         int contAI = 0;
 
-        System.out.print("Vetor V: ");
+        System.out.print("Idades: ");
       
         for (int i = 0; i < V.length; i++) {
 
@@ -38,7 +38,9 @@ public class cincoVetores {
           
         }
 
-        System.out.print("Idades Pares: ");
+        System.out.println();
+        System.out.println();
+        System.out.print("Idades Pares -> ");
 
         for (int i = 0; i < contP; i++) {
             System.out.print(P[i] + "\t");
@@ -48,7 +50,9 @@ public class cincoVetores {
           
         }
 
-        System.out.print("Idades Ímpares: ");
+        System.out.println();
+        System.out.println();
+        System.out.print("Idades Ímpares -> ");
 
         for (int i = 0; i < contI; i++) {
             System.out.print(I[i] + "\t");
@@ -58,7 +62,9 @@ public class cincoVetores {
           
         }
 
-        System.out.print("Idades Maiores que 18 e são Pares: ");
+        System.out.println();
+        System.out.println();
+        System.out.print("Idades Maiores/Iguais 18 e Pares -> ");
 
         for (int i = 0; i < contAP; i++) {
 
@@ -66,7 +72,9 @@ public class cincoVetores {
           
         }
 
-        System.out.print("Idades Maiores que 18 e são Ímpares: ")
+        System.out.println();
+        System.out.println();
+        System.out.print("Idades Maiores/Iguais 18 e Ímpares -> ");
 
         for (int i = 0; i < contAI; i++) {
 
