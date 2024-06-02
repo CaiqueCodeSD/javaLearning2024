@@ -34,7 +34,7 @@ public class notaAlunoMatriz {
         System.out.println();
         
         for (int i = 0; i < 4; i++) {
-            System.out.print("Estudante [" + (i + 1) + "] -> " + "\t");
+            System.out.print("Média Estudante [" + (i + 1) + "] -> " + "\t");
             System.out.println(V[i] + "\t");
         }
       
