@@ -25,7 +25,15 @@ public class figurasGeometricas {
         while (formaMaiusc == 'R' || formaMaiusc == 'Q' || formaMaiusc == 'C') {
             
         }
-        
+
+        if (formaMaius != 'R' || formaMaiusc != 'Q' || formaMaiusc != 'C') {
+            System.out.println("Opção Inválida!")
+            System.exit(0);
+        }
+
+        switch (formaMaiusc) {
+            case R: 
+        }
       
     }
   
