@@ -19,8 +19,12 @@ public class figurasGeometricas {
 
         System.out.println();
         System.out.print("QUAL FIGURA DESEJA CALCULAR? -> ");
+        char forma = read.next().charAt(0);
+        char formaMaiusc = Character.toUpperCase(forma);
         
-
+        while (formaMaiusc == 'R' || formaMaiusc == 'Q' || formaMaiusc == 'C') {
+            
+        }
         
       
     }
