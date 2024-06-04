@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class somarMatriz {
 
-    public class static void main (String[] args) {
+    public static void main (String[] args) {
 
         Random number = new Random();
       
@@ -12,11 +12,19 @@ public class somarMatriz {
         int some = 0;
 
         for (int i = 0; i < 4; i++) {
-            for (int j = 0; i < 4; i++) {
-                matriz[i][j] = number(11);
+        	
+            for (int j = 0; j < 4; j++) {
+            	
+                matriz[i][j] = number.nextInt(11);
                 some += matriz[i][j];
+                System.out.print(matriz[i][j] + "\t");
+                
             }
+            System.out.println();
         }
+        
+        System.out.println();
+        System.out.println("Soma de todos elementos: " + some);
       
     }
   
