@@ -29,35 +29,34 @@ public class esporteFavorito {
 
         while (esporteMaiusc != 'Z') {
         	
-        	System.out.println("Entrevistado " + (entrevistado +1) + ": ");
+            System.out.println("Entrevistado " + (entrevistado +1) + ": ");
 
             System.out.print("ESPORTE FAVORITO -> ");
             char esporte = read.next().charAt(0);
             esporteMaiusc = Character.toUpperCase(esporte);
             
-			if (esporteMaiusc == 'Z') {
-				System.out.println("PROGRAMA ENCERRADO");
-				break;
-			}
+	    if (esporteMaiusc == 'Z') {
+		System.out.println("PROGRAMA ENCERRADO");
+		break;
+	    }
 			
-			if (esporteMaiusc == 'F') {
-				contFutebol++;
-			}
-			      
+	    if (esporteMaiusc == 'F') {
+		contFutebol++;
+	    }      
 
             System.out.print("SEXO DO ENTREVISTADO -> ");
             char sexo = read.next().charAt(0);
             char sexoMaiusc = Character.toUpperCase(sexo);
             
             if (sexoMaiusc != 'M' && sexoMaiusc != 'F') {
-				System.out.println("SEXO INVÁLIDO");
-			}
+		System.out.println("SEXO INVÁLIDO");
+	    }
             
             if (sexoMaiusc == 'F') {
-	            if (esporteMaiusc == 'V') {
-	            	mulherVolei++;
-	            }
-	            contMulher++;
+	        if (esporteMaiusc == 'V') {
+	            mulherVolei++;
+	        }
+	        contMulher++;
             }
 
             System.out.print("TORCE PARA O TIME -> ");
@@ -83,8 +82,6 @@ public class esporteFavorito {
         System.out.println("PERCENTUAL DAS MULHERES QUE PREFEREM VÔLEI -> " + preferemVoleiMulheres*100 + "%");
         System.out.println("PERCENTUAL DOS QUE PREFEREM FUTEBOL E TORCEM PRO TIME 1 -> " + percentualTimeUm*100 + "%");
 
-
-      
     }
   
 }
