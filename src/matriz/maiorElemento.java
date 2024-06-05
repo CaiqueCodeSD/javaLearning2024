@@ -1,7 +1,5 @@
 /*Escreva um programa em Java que encontre e imprima o maior elemento em uma matriz 5x5.*/
 
-/*Escreva um programa em Java que encontre e imprima o maior elemento em uma matriz 5x5.*/
-
 import java.util.Random;
 import java.util.Scanner;
 
