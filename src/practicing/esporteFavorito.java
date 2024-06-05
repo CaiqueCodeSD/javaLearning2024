@@ -11,7 +11,24 @@ public class esporteFavorito {
 
     public static void main (String[] args) {
 
-        
+        Scanner read = new Scanner(System.in);
+
+        System.out.print("Quantas pessoas participarão da pesquisa?");
+        int quant = read.nextInt();
+
+        while (esporte != 'Z') {
+
+            System.out.print("ESPORTE FAVORITO -> ");
+            char esporte = read.next().charAt(0);
+            char esporteMaiusc = Character.toUpperCase(esporte);
+
+            System.out.println("SEXO DO ENTREVISTADO -> ");
+            char sexo = read.next().charAt(0);
+            char sexoMaiusc = Character.toUpperCase(sexo);
+
+            
+            
+        }
       
     }
   
