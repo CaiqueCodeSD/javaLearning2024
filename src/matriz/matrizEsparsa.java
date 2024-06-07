@@ -21,9 +21,9 @@ public class matrizEsparsa {
         }
 
         if (contZero > 8) {
-            System.out.println("A matriz é Esparsa pois possui " + contZero + " ZEROS");
+            System.out.println("A matriz é Esparsa, pois possui " + contZero + " ZEROS");
         } else {
-            System.out.println("A matriz não é Esparsa, pois possui apenas " + contZero + " ZEROS");
+            System.out.println("A matriz NÃO é Esparsa, pois possui apenas " + contZero + " ZEROS");
         }
       
     }
