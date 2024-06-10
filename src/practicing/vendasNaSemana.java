@@ -5,3 +5,13 @@ domingo, 1 – segunda, .....)). A seguir, informe:
 - o produto com mais venda no fim de semana (sábado e domingo);
 - adicione em um vetor V as vendas dos produtos de segunda à quarta (3 dias
 acumulados);*/
+
+public class vendasNaSemana {
+
+public static void main(String[] args]{
+
+int[][] vendas = new int[20][7];
+
+}
+
+}
