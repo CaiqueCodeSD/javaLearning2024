@@ -6,12 +6,49 @@ domingo, 1 – segunda, .....)). A seguir, informe:
 - adicione em um vetor V as vendas dos produtos de segunda à quarta (3 dias
 acumulados);*/
 
+import java.util.Random;
+
 public class vendasNaSemana {
 
-public static void main(String[] args]{
+    public static void main(String[] args){
 
-int[][] vendas = new int[20][7];
+        Random quantidade = new Random();
+      
+        int[][] vendas = new int[20][7];
+        int maisVendidoSemana = 0;
+        int vendidoSemanaPosicao = 0;
+        int maisVendidoFDS = 0;
+        int vendidoFDSPosicao = 0;
 
+        for (int i = 0; i < 20; i++) {
+            int totalVendas = 0;
+            for (int j = 0; j < 7; j++) {
+                vendas[i][j] = quantidade.nextInt(101);
+                System.out.print(vendas[i][j] + "\t");
+                totalVendas += vendas[i][j];
+            }
+            System.out.println();
+
+            if (totalVendas > maisVendidoSemana) {
+                maisVendidoSemana = totalVendas;
+                vendidoSemanaPosicao = i;
+            }
+
+            int totalVendasFDS = vendas[i][0] + vendas[i][6];
+            if (totalVendasFDS > maisVendidoFDS) {
+                maisVendidoFDS = totalVendasFDS;
+                vendidoFDSPosicao = i;
+            }
+        }
+
+        System.out.println("Produto mais vendido na semana -> " + (vendidoSemanaPosicao+1));
+        System.out.println("Produto mais vendido no FDS -> " + (vendidoFDSPosicao+1));
+
+        System.out.println("Vendas dos produtos de segunda à quarta:");
+        for (int i = 0; i < 20; i++) {
+            int vendasSegQua = vendas[i][1] + vendas[i][2] + vendas[i][3];
+            System.out.println("Prod. " + (i+1) + " -> " + vendasSegQua);
+        }
+    }
 }
-
 }
