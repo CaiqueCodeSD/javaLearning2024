@@ -20,6 +20,8 @@ public class terceiraMatriz {
             System.out.println();
         }
 
+        System.out.println();
+
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 M2[i][j] = gere.nextInt(10001);
@@ -27,7 +29,17 @@ public class terceiraMatriz {
             }
             System.out.println();
         }
-      
+
+        System.out.println();
+
+         for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                M3[i][j] = M1[i][j] + M2[i][j];
+                System.out.print(M3[i][j] + "\t");
+            }
+            System.out.println();
+        }
+        
     }
   
 }
