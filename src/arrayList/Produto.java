@@ -37,9 +37,16 @@ public class Produto {
 		produto.add(new Produto("Monitor", 1100.20));
 		produto.add(new Produto("Placa de Vídeo", 800));
 		
+		double soma = 0;
+		for (Produto produto2 : produto) {
+			soma += produto2.getPreco();
+		}
+		
 		for (Produto prod : produto) {
 			System.out.println(prod.getNome() + " custa R$" + prod.getPreco());
 		}
+		
+		System.out.println("\nValor total ::: R$" + soma);
 		
 	}
 	
