@@ -15,7 +15,6 @@ public class Circulo implements FiguraGeometrica{
 		return Math.PI * Math.pow(raio, 2);
 	}
 	
-	//getters e setters
 	public double getRaio() {
 		return raio;
 	}
