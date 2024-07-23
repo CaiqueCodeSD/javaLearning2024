@@ -15,7 +15,6 @@ public class Quadrado implements FiguraGeometrica{
 		return Math.pow(lado, 2);
 	}
 
-	//getters e setters
 	public int getLado() {
 		return lado;
 	}
